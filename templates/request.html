@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>LINE Pay Request API</title>
+    </head>
+    <body>
+		<dl>
+			<!-- <dt>email</dt>
+			<dd>{{ request.email }}</dd> -->
+			<!-- <dt>phone</dt>
+			<dd>{{ request.phone }}</dd> -->
+			<dt>full_name</dt>
+			<dd>{{ request.full_name}}</dd>
+			<dt>paymentAccessToken</dt>
+			<dd>{{ request.info.paymentAccessToken }}</dd>
+			<dt>transactionId</dt>
+			<dd>{{ request.info.transactionId }}</dd>
+			<dt>Payment Status Check Return Code</dt>
+			<dd>{{ request.paymentStatusCheckReturnCode }}</dd>
+			<dt>Payment Status Check Return Message</dt>
+			<dd>{{ request.paymentStatusCheckReturnMessage }}</dd>
+			<dt>Access to below paymentUrl to confirm your payment</dt>
+			<dd>
+				<a href="{{ request.info.paymentUrl.web }}" rel="noopener noreferrer">paymentUrl</a>
+			</dd>
+		</dl>
+    </body>
+</html>

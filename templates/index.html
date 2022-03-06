@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>index</title>
+    </head>
+    <body>
+		<dl>
+			<dt>商品明細</dt>
+			<dd>{{ request.product }}</dd>
+			<dt>金額</dt>
+			<dd>{{ request.amount }}</dd>
+			<dt>email</dt>
+			<dd>{{ request.email }}</dd>
+			<dt>name</dt>
+			<dd>{{ request.username }}</dd>
+			<!-- <dd>
+				<a href="{{ request.url }}" rel="noopener noreferrer">填寫資料</a>
+			</dd> -->
+		</dl>
+		<form action = "/request" method = "POST">
+			<!-- <p>email <input type = "email" name = "email" /></p>
+			<p>phone <input type = "tel" name = "phone" /></p>
+			<p>full_name <input type = "text" name = "full_name" /></p> -->
+			<p><input type = "submit" value = "submit" /></p>
+		</form>
+    </body>
+</html>

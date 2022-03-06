@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>LINE Pay Confirm API request</title>
+    </head>
+    <body>
+		<dl>
+			<dt>orderId</dt>
+			<dd>{{ request.info.orderId }}</dd>
+			<dt>transactionId</dt>
+			<dd>{{ request.info.transactionId }}</dd>
+			<dt>product name</dt>
+			<dd>{{ request.info.packages[0].products[0].name }}</dd>
+			<dt>price</dt>
+			<dd>{{ request.info.packages[0].products[0].price }}</dd>
+			<dt>Payment Status Check Return Code</dt>
+			<dd>{{ request.paymentStatusCheckReturnCode }}</dd>
+			<dt>Payment Status Check Return Message</dt>
+			<dd>{{ request.paymentStatusCheckReturnMessage }}</dd>
+			<dt>Payment Details</dt>
+			<dd>{{ request.payment_details }}</dd>
+			<dt>Access to below link to refund your payment</dt>
+			<dd>
+				<a href="/refund" rel="noopener noreferrer">REFUND</a>
+			</dd>
+		</dl>
+    </body>
+</html>
